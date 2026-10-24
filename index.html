@@ -315,7 +315,7 @@ footer { padding-block: 40px 48px; border-top: 1px solid var(--rule) }
     </nav>
   </div>
   <div class="contact">
-    <div><div class="eyebrow">Contact</div><p>Questions about NULLUME, your account or a payment:<br><span class="sel">kennethleeventura@gmail.com</span></p><p class="fine">We reply within 2 business days.</p></div>
+    <div><div class="eyebrow">Contact</div><p>Questions about NULLUME, your account or a payment:<br><span class="sel">support@nullumetarot.com</span></p><p class="fine">We reply within 2 business days.</p></div>
     <div><div class="eyebrow">Company</div><p>NULLUME is a product of 2882 LLC<br>301 N Palm Canyon Ave, Ste 103 #290<br>Palm Springs, CA 92262, USA</p></div>
     <div><div class="eyebrow">Policies</div><p><a href="terms.html">Terms of Service</a><br><a href="privacy.html">Privacy Policy</a><br><a href="refunds.html">Refunds, cancellation &amp; shipping</a></p></div>
   </div>
@@ -327,7 +327,7 @@ footer { padding-block: 40px 48px; border-top: 1px solid var(--rule) }
 
 <script>
 /* Waitlist: signups are emailed to the NULLUME inbox. Swap WAITLIST_ENDPOINT for a Brevo form URL later. */
-var WAITLIST_ENDPOINT = "https://formsubmit.co/ajax/kennethleeventura@gmail.com";
+var WAITLIST_ENDPOINT = "https://formsubmit.co/ajax/support@nullumetarot.com";
 (function () {
   var forms = document.querySelectorAll('[data-form]');
   var ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -348,7 +348,7 @@ var WAITLIST_ENDPOINT = "https://formsubmit.co/ajax/kennethleeventura@gmail.com"
         body: JSON.stringify({ email: email, _subject: 'NULLUME waitlist signup', _template: 'table', _captcha: 'false', source: location.hostname || 'nullumetarot.com' }) })
         .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.success === 'false' || j.success === false) throw new Error('rejected'); }); })
         .then(function () { msg.textContent = "You're on the list. We'll email you when the table opens."; msg.classList.add('ok'); input.value = ''; reset(); })
-        .catch(function () { msg.textContent = "That didn't go through. Try again in a moment, or email kennethleeventura@gmail.com."; msg.classList.add('err'); reset(); });
+        .catch(function () { msg.textContent = "That didn't go through. Try again in a moment, or email support@nullumetarot.com."; msg.classList.add('err'); reset(); });
     });
   });
 })();
