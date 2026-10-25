@@ -29,6 +29,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .wl-msg.ok{color:#3E7A70}.wl-msg.err{color:#B9472A}
 .wl-dark .wl-row input[type=email]{background:#1A1411;border-color:#4A3D33;color:#EFE6D8}
 .wl-dark .wl-msg.ok{color:#8FC7BC}.wl-dark .wl-msg.err{color:#E58B73}
+.more{background:#FCFAF6;border-top:1px solid #DDD3C4}
+.more-in{max-width:760px;margin:0 auto;padding:64px 48px 72px}
+.more h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,3.4vw,40px);line-height:1.1;margin:40px 0 14px;color:#1F1915}
+.more h2:first-child{margin-top:0}
+.more p{font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.7;color:#3D342D;margin:0 0 16px}
+.more-links{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:10px}
+.more-links a{font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:16px;font-weight:600;color:#8A5A0E}
+@media (max-width:600px){.more-in{padding:44px 20px 52px}}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .legal{max-width:760px;margin:0 auto;padding:56px 48px 96px}
 .legal h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(44px,6vw,72px);line-height:1;margin:0 0 10px}
